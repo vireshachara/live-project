@@ -1,0 +1,91 @@
+<div class="one">
+    <h2 class="heading">Structural Directives</h2>
+    <h2 class="heading1">ngIf</h2>
+    <div>
+        <h2>ngIf</h2>
+        <div class="one" *ngIf="success_msg"> Console log updated successfully</div>
+
+        <h2>ngIf else</h2>
+        <div *ngIf="pass; else fail">Result is pass</div>
+        <ng-template #fail>Result is Fail</ng-template>
+
+        <h2>ngIf else with or condition(||)</h2>
+        <div *ngIf="pass || fail">Result is pass</div>
+
+
+        <h1>ngIf else with and condition(&&)</h1>
+        <div *ngIf="pass && fail">Result is pass</div>
+
+        <h2>ngIf Not </h2>
+        <div class="one" *ngIf="!success_msg"> Console log updated successfully</div>
+
+        <h2>ngIf then else</h2>
+        <div *ngIf="Veeresh; then correctmsg; else errormsg"></div>
+        <ng-template #correctmsg>Mechanical Engineer</ng-template>
+        <ng-template #errormsg>Electrical Engineer</ng-template>
+
+        <div *ngIf="showMassage1">
+            <h1>car</h1>
+        </div>
+
+        <div *ngIf="!showMassage1">
+            <h1>Bus</h1>
+        </div>
+    </div>
+    <h2 class="heading1">ngFOr</h2>
+    <div>
+        <ul>
+            <li *ngFor="let contact of contact; let i=index">
+                {{ i+1 }} &nbsp;{{ contact.firstName }} {{ contact.MobileNo}} {{ contact.placeOfBirth}}
+            </li><br>
+            <li *ngFor="let name of name; let i=index">
+                {{ i+1 }} &nbsp;{{name}}
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="heading1">ngSwitch</h2>
+    <u>Example-1</u>
+
+    <!-- [ngSwitch] Binding required at outside -->
+
+    <div ngSwitch="population">
+        <div *ngSwitchCase="10000000"> Population of Hydrabad = 1000000</div>
+        <div *ngSwitchCase="12500000"> Population of Bangalore = 12500000</div>
+        <div *ngSwitchCase="20000000"> Population of Delhi = 2000000</div>
+        <div *ngSwitchCase="25000000"> Population of Mumbai = 2500000</div>
+        <div *ngSwitchDefault="1400000000"> Population of India = 1400000000</div>
+    </div>
+    <u>Example-2 </u>
+    <div ngSwitch="age">
+        <div *ngSwitchCase="18"> Young </div>
+        <div *ngSwitchCase="25"> Job seeker</div>
+        <div *ngSwitchCase="35"> Family Man</div>
+        <div *ngSwitchCase="55"> Old</div>
+        <div *ngSwitchCase="75"> Too Old</div>
+        <div *ngSwitchDefault=""> Person </div>
+    </div>
+
+    <h2 class="heading">Attribute Directives</h2>
+    <h2 class="heading1">ngStyle</h2>
+
+    <h3 ngStyle="{'background-color':'yellow','color':'red','padding':'10px'}">Basic ngStyle Example</h3>
+    <h3 ngStyle="{'background-color':styleProp, 'color':'white'}">ngStyle (Dynamic value from component) </h3>
+    <h3 ngStyle="{'color': textcolor==='blue'? 'blue' : 'green'}"> ngStyle with Condition</h3>
+
+    <h2 class="heading1">ngClass</h2>
+
+    <div ngClass="isBoolian ? 'success' : 'error'">Simple ngClass Example </div><br>
+
+    <div ngClass="'c1'">Simple ngClass Example </div><br>
+    <div ngClass="'c1 c2'">Multiple ngClass Example </div><br>
+    <div ngClass="classProp">ngClass Example using Variables</div><br>
+    <div ngClass="propClass === 'c4'? 'c4': 'c1'"> ngClass Example using Conditions</div><br>
+    <div ngClass="{ 'c2':'true', 'c5':'true'}"> ngClass Example using Objects</div><br><br>
+
+
+    <h2 class="heading">Custom Directives</h2>
+
+    <h3> This is the line without Directive </h3>
+    <h3 appError> This is the line with Directive </h3>
+</div>

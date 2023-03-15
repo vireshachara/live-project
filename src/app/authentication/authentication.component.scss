@@ -1,0 +1,42 @@
+.body {
+    background-color: black;
+}
+.navbar-header {
+    margin-left: 40%;
+}
+.navbar-nav {
+    float:right;
+    margin-right: 80px;
+}
+li {
+    padding: 0px 25px;
+}
+.image1 {
+    width: 300px;
+    height: 300px;
+    margin: 80px 0px 0px 200px;
+    float: left;
+}
+.image2{
+    width: 300px;
+    height: 300px;
+    margin: 80px 200px 0px 0px;
+    float: right;
+}
+.navbar-brand {
+    font-size: 30px;
+
+}
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .div2 {
+    margin:100px;
+  }

@@ -1,0 +1,82 @@
+<!-- <div>
+    <div class="heading">
+        <h1 class="c5">Data Binding</h1>
+        <h1 class="c1">OneWay Data Binding</h1>
+        <h2 class="c6"> Interpolation</h2>
+        <h2>{{title}}</h2>
+        <div>
+            Component to view =>
+            1) Interpolation
+            2) Property Binding
+            3) Style Binding
+            4) Attribute Binding
+        </div>
+        <div>
+            view to component =>
+            1) Event Binding
+        </div>
+        <h2>{{title2}}</h2>
+        <h2>{{page_count}}</h2>
+        <h2>{{user_object.first_name}} {{user_object.last_name}}</h2>
+        <h2>{{array}}</h2>
+        <h2 class="c6">Interpolation Using ngIf</h2>
+        <h2 *ngIf="isUserLoggedIn">{{user.first_name}} {{user.last_name}}</h2>
+        <h2 class="c6">Interpolation Using ngFor</h2>
+        <h2 *ngFor="let contact of contact; let i=index"> {{i+1}} &nbsp;{{contact.firstName}} {{contact.MobileNo}}
+            {{contact.placeOfBirth}}</h2>
+        <table class="table">
+            <tr>
+                <th> First Name of person </th>
+                <th> Last Name of person</th>
+                <th> Place of Birth </th>
+            </tr>
+            <tr *ngFor="let contact of contact">
+                <td> {{contact.firstName}} </td>
+                <td> {{contact.MobileNo}} </td>
+                <td> {{contact.placeOfBirth}} </td>
+            </tr>
+        </table>
+
+        <h2 class="c6">Property Binding</h2>
+
+        <div [innerHTML]="title"></div>
+        <div [innerHTML]="user_object.first_name"></div>
+
+        <table class="table">
+            <tr>
+                <td> Slno </td>
+                <td> contacts </td>
+                <td> Mobile no </td>
+            </tr>
+            <tr>
+                <td [attr.colspan]="colVal">01</td>
+                <td> 9986126600 </td>
+            </tr>
+        </table>
+
+        <h2 class="c6">Event Binding</h2>
+
+        <h1 *ngIf="showMassage">Hello </h1>
+
+        <button (click)="sayHello()">Click to say Hello</button>
+
+        <div (mouseover)="highlightBgColor()">Click to say Hello</div>
+
+        <input type="text" (focus)="focusOn()" />
+
+        <h1 class="c1">TwoWay Data Binding</h1>
+
+        <input type="text" ngModel="user_name" />
+        <h1>{{user_name}}</h1>
+
+        <input type="text" ngModel="twoWay">
+        <h4>{{twoWay}}</h4>
+
+        <h3><u>Sending Data from HTML to Typescript(On console)</u> </h3>
+
+        <input type="text" ngModel="user1" />
+        <p class="error" *ngIf="errormassage">The user does not exist</p><br><br>
+
+        <button (click)="getUser1($event)">Click</button><br>
+        <img src="assets\Shiva.jpg" width="100%">
+    </div> -->

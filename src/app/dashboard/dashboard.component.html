@@ -1,0 +1,25 @@
+<div>
+  <div class="header">
+    <a (click)="opened=!opened"><i class="fa-solid fa-bars"></i></a>
+    <a href=""> <i class="fa fa-home" aria-hidden="true"></i></a>
+    <span class="title">Angular Topics</span>
+    <span class="date"> Date : {{ dateExample | date : 'MMM-dd-yyyy'}}</span>
+  </div>
+  <div>
+    <div>
+      <mat-drawer-container class="example-container">
+        <mat-drawer #sidenav class="sidenav" mode="side" [(opened)]="opened">
+          <button routerLinkActive="active" routerLink='/dashboard/home'> Home </button>
+          <button routerLinkActive="active" routerLink="/dashboard/routing"> Routing Methods </button>
+          <button routerLinkActive="active" routerLink="/dashboard/directives"> Directives </button>
+          <button routerLinkActive="active" routerLink="/dashboard/databinding"> Data Binding </button>
+          <button routerLinkActive="active" routerLink="/dashboard/pipes"> Pipes </button>
+          <button routerLinkActive="active" routerLink="/dashboard/service"> Services </button>
+        </mat-drawer>
+        <mat-drawer-content>
+          <router-outlet></router-outlet>
+        </mat-drawer-content>
+      </mat-drawer-container>
+    </div>
+  </div>
+</div>

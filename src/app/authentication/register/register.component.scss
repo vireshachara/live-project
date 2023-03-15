@@ -1,0 +1,20 @@
+.Reactive {
+    padding:40px 30px 30px 30px ;
+    background-color: rgb(223, 229, 229);
+    border-radius: 1%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+ }
+ input {
+     width:300px;
+     float:right
+ }
+ .popup {
+     color:red;
+ }
+button {
+    background-color: rgb(55, 55, 106);
+    color: white;
+}

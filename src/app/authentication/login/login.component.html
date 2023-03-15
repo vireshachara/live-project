@@ -1,0 +1,19 @@
+<form class="form" #registerForm="ngForm" (ngSubmit)="submitForm(registerForm)">
+    <h1 class="heading">Angular Topics</h1>
+    <img class="image" src="assets\BOOK.jpg" alt="Image not available"><br>
+    <input type="email" placeholder="User Name" ngModel name="email" #email required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    <br><br>
+    <p *ngIf="errorMessage" class="errorMessage"> Plaese Enter the correct Email Address</p>
+    <input type="password" placeholder="Password" ngModel name="password" #password required>
+    <!-- // Regex pattern // -->
+    <p *ngIf="errorMessage1" class="errorMessage"> Plaese Enter the correct Password</p>
+    <br><br>
+    <button type="submit"> Log In</button>
+    <p class="reg">Not registered? <strong> <a routerLink='/authentication/register'>Create an Account</a> </strong></p>
+</form>
+
+<!-- (click)="navigate()" -->
+
+
+<!-- [disabled]="registerForm.form.invalid" -->

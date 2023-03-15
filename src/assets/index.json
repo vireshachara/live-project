@@ -1,0 +1,18 @@
+{
+    "name":"Veeresh",
+    "details": {
+        "address":"#04, Singapur, Sindhanur",
+        "phone_number" : "9986126600"
+    },
+    "family": [
+        {
+            "name":"mamata",
+            "phone_number": "6565642553"
+        },
+        {
+            "name":"Janardhan",
+            "phone_number":"5654654654"
+        }
+    ],
+    "isRegistered": true
+}

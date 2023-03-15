@@ -1,0 +1,18 @@
+<div class="Reactive">
+    <h2><b> <u> Register For New Account </u> </b></h2> <br>
+    <!-- [formGroup]="loginForm" When outside -->
+    <form formGroup="loginForm">
+        <div>
+            <input type="text" formControlName="f_name" placeholder="Enter First Name"> <br><br>
+            <span class="popup" *ngIf="f_name.touched && f_name.invalid"> Please Enter the Correct First Name</span>
+        </div>
+        <input type="text" formControlName="l_name" placeholder="Enter Second Name"> <br><br>
+        <input type="text" formControlName="email" placeholder="Enter Email Address"> <br><br>
+        <input type="password" formControlName="password" placeholder="Enter Password"> <br> <br>
+        <input type="password" formControlName="confirm_password" placeholder="Re-enter Password"> <br> <br>
+        <input type="text" formControlName="phone_number" placeholder="Enter Mobile Number"> <br> <br> <br>
+        <button type="submit" (click)="submitForm()">Submit</button>
+    </form>
+</div>
+
+<!-- [disabled]="loginForm.invalid" -->

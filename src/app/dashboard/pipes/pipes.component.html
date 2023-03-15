@@ -1,0 +1,78 @@
+<!-- For all pipe double flower required {{dateExample | date }} -->
+<div class="body1">
+    <div class="body">
+        <h2 class="heading">Pipes</h2>
+        <h2 class="heading1">Built in pipes</h2>
+
+        <!-- For all pipe double flower required {{name | titlecase }} -->
+        <h3>Title Case</h3>
+        <div> {{name | titlecase}}  </div>
+
+        <h3>Lower Case</h3>
+        <div> {{lowerCaseExample | lowercase }}</div>
+
+        <h3>Upper Case</h3>
+        <div> {{upperCaseExample | uppercase }}</div>
+
+        <h3>Dates</h3>
+        <div>{{dateExample | date }}</div>
+
+        <h3>Slice Pipe</h3>
+        <div>{{ slice | slice:1:12 }}</div>
+
+        <h3>Number Example</h3>
+        <div>{{ 5.678 | number:'1.2-3' }}</div>
+        <div>{{ 5.678 | number:'3.4-5' }}</div>
+        <div>{{ 5.678 | number:'3.1-2' }}</div>
+
+        <h3>Json</h3>
+        <div> {{jsonExample | json}} </div>
+
+        <h3>Currency Example</h3>
+        <div> {{currencyExample | currency}} </div>
+
+        <h3>Percent Example</h3>
+        <div> {{percentExample | percent}}</div>
+        <div> {{.25 | percent}}</div>
+
+
+        <!-- // Parameterized// -->
+
+        <h2 class="heading1">Parameterized pipes</h2>
+
+        <div>{{currencyExample | currency}}</div>
+        <div>{{currencyExample | currency: 'INR'}}</div>
+        <div>{{currencyExample | currency: 'CAD'}}</div>
+        <div>{{currencyExample | currency: 'USD'}}</div>
+        <div>{{currencyExample | currency: 'CNY'}}</div>
+        <div>{{currencyExample | currency: 'USD': 'code'}}</div>
+
+        <div>{{dateExample | date : 'short'}}</div>
+        <div>{{dateExample | date : 'shortTime'}}</div>
+        <div>{{dateExample | date : 'shortDate'}}</div>
+        <div>{{dateExample | date : 'medium'}}</div>
+        <div>{{dateExample | date : 'mediumTime'}}</div>
+        <div>{{dateExample | date : 'mediumDate'}}</div>
+        <div>{{dateExample | date : 'long'}}</div>
+        <div>{{dateExample | date : 'longTime'}}</div>
+        <div>{{dateExample | date : 'longDate'}}</div>
+        <div>{{dateExample | date : 'MM-dd-yyyy'}}</div>
+        <div>{{dateExample | date : 'MMM-dd-yyyy'}}</div>
+
+
+        <div>{{percentExample | percent : '2.2-4'}}</div>
+        <div>{{percentExample | percent : '3.2-3'}}</div>
+        <div>{{percentExample | percent : '2.2-2'}}</div>
+
+
+        <!-- // Chaining Pipes// -->
+
+        <h2 class="heading1">Chaining pipes</h2>
+
+
+        <div>{{dateExample | date | uppercase}}</div>
+        <div>{{currencyExample | currency: 'CNY'|lowercase}}</div>
+
+
+    </div>
+</div>
